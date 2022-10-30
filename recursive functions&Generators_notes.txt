@@ -1,0 +1,20 @@
+recursive functions python
+n/b- recursive functions are not iterations 
+   - in iteration is more efficient however recursive functions are often easiser to understand and write.
+   - recursive functions are also useful for manipulating recursive data structures such as linked lists and trees 
+   
+Generators and co-routines
+-generators are functions that return an entire senquence of results by using the "yield" statement.	
+-As we can see, building a list to do this calculation takes significantly longer. The
+performance improvement as a result of using generators is because the values are
+generated on demand, rather than saved as a list in memory. A calculation can begin before
+all the elements have been generated and elements are generated only when they are
+needed.
+In the preceding example, the sum method loads each number into memory when it is
+needed for the calculation. This is achieved by the generator object repeatedly calling the
+__next__() special method. Generators never return a value other than None.
+-generator objects are used in for loops eg-:
+	for i in oddcount(1,10):print(i)
+	
+Creating generator expressions perform similar roles to list compresssions genrator expressions however do not create lists they therefore do not support sequence methods because ther create data only when in demand 
+	
